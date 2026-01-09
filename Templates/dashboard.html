@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Product Management{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <div class="welcome-section">
+        <h1>Welcome, {{ username }}!</h1>
+        <p>Manage your products efficiently with our system.</p>
+    </div>
+    
+    <div class="action-cards">
+        <div class="card">
+            <h3>Enter Product</h3>
+            <p>Add new products to your inventory</p>
+            <a href="{{ url_for('enter_product') }}" class="btn btn-primary">Add Product</a>
+        </div>
+        
+        <div class="card">
+            <h3>View Products</h3>
+            <p>Browse and manage your existing products</p>
+            <a href="{{ url_for('view_products') }}" class="btn btn-secondary">View Products</a>
+        </div>
+    </div>
+    
+    {% if products %}
+    <div class="recent-products">
+        <h2>Your Recent Products</h2>
+        <div class="product-grid">
+            {% for product in products %}
+            <div class="product-card">
+                <h4>{{ product.name }}</h4>
+                <p class="product-value">${{ "%.2f"|format(product.value) }}</p>
+                <p class="product-desc">{{ product.description[:50] }}{% if product.description|length > 50 %}...{% endif %}</p>
+                <p class="product-date">Added: {{ product.date_created.strftime('%Y-%m-%d') }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        
+        {% if products|length >= 5 %}
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="{{ url_for('view_products') }}" class="btn btn-outline">View All Products</a>
+        </div>
+        {% endif %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <h3>No Products Yet</h3>
+        <p>Start by adding your first product!</p>
+        <a href="{{ url_for('enter_product') }}" class="btn btn-primary">Add Your First Product</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
