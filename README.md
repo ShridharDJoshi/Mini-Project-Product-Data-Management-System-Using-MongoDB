@@ -16,27 +16,15 @@ User registration and login with secure password hashing Session-based authentic
 🚀 Getting Started
 
 
-Prerequisites:
+⚠️Prerequisites:
 
-Python 3.x installed
+1. Python 3.x installed
 
-​MongoDB Community Server installed and running locally ​MongoDB Compass (optional, for GUI view of data)
-
-​Git (if you are cloning the repo)
-
-​Clone or download the project
-
-
-If using Git:
-
-git clone https://github.com/<your-username>/<your-repo-name>.git
-
-cd <your-repo-name>
-
-Or download as ZIP from GitHub and extract, then open the folder in your terminal.
+2. ​MongoDB Community Server installed and running locally ​MongoDB Compass (optional, for GUI view of data)
 
 
 🌏 To Create and activate virtual environment:
+
 
 ➡️ python -m venv venv
 
