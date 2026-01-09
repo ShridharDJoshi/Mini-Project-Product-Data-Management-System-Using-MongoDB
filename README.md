@@ -21,7 +21,7 @@ Main Folder
 
 ├── app.py
 
-├── requirements.txt
+|         ├── requirements.txt
 
 ├── templates/
 
