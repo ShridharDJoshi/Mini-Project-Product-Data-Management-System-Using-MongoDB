@@ -13,39 +13,24 @@ Database: MongoDB (accessed via MongoDB Compass)
 User registration and login with secure password hashing Session-based authentication, so each user sees only their own products Add products with name, value, and description View list of all products added by the logged-in user Update existing product details Delete products. All data stored in MongoDB and viewable in MongoDB Compass
 
 ​
-📂 Project Structure
-Add all the files inside the folder as shown below.
+## 📂 Project Structure
 
-
-Main Folder
-
-├── app.py
-
-|         ├── requirements.txt
-
+project-root/
+├── app.py                 # Main Flask backend application
+├── requirements.txt       # Python dependencies
 ├── templates/
-
 │   ├── base.html          # Base layout template
-
 │   ├── login.html         # Login & Register page
-
 │   ├── dashboard.html     # Main menu page
-
 │   ├── product_entry.html # Add product page
-
 │   ├── product_view.html  # View products page
-
 │   └── product_update.html# Update product page
-
 └── static/
+    ├── css/
+    │   └── style.css      # Stylesheet
+    └── js/
+        └── main.js        # Frontend JavaScript
 
-|    ├── css/
-         
-|    |     └── style.css      # Stylesheet
-
-|    └── js/
-
-|     |    └── main.js        # Frontend JavaScript
         
         
 🚀 Getting Started
