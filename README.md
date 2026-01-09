@@ -14,9 +14,10 @@ User registration and login with secure password hashing Session-based authentic
 
 ​
 📂 Project Structure
+Add all the files inside the folder as shown below.
 
 
-project-root/
+Main Folder
 
 ├── app.py
 # Main Flask backend application
