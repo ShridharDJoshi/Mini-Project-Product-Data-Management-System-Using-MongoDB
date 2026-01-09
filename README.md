@@ -20,10 +20,8 @@ Add all the files inside the folder as shown below.
 Main Folder
 
 ├── app.py
-# Main Flask backend application
 
 ├── requirements.txt
-# Python dependencies
 
 ├── templates/
 
@@ -40,11 +38,14 @@ Main Folder
 │   └── product_update.html# Update product page
 
 └── static/
-     ├── css/
-         |
-         └── style.css      # Stylesheet
-    └── js/
-        └── main.js        # Frontend JavaScript
+
+|    ├── css/
+         
+|    |     └── style.css      # Stylesheet
+
+|    └── js/
+
+|     |    └── main.js        # Frontend JavaScript
         
         
 🚀 Getting Started
