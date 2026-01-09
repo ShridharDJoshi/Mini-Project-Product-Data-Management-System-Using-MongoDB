@@ -1,14 +1,17 @@
 Product Management System (Flask + MongoDB)
 A full-stack web application that allows users to register, log in, and manage their own products (add, view, update, and delete) with all data stored in MongoDB.
+
 ​
 🔧 Tech Stack
 Frontend: HTML, CSS, JavaScript
 ​Backend: Python, Flask
 Database: MongoDB (accessed via MongoDB Compass)
 ​Other: Flask-PyMongo, Werkzeug (password hashing)
+
 ​
 ✨ Features
 User registration and login with secure password hashing Session-based authentication, so each user sees only their own products Add products with name, value, and description View list of all products added by the logged-in user Update existing product details Delete products. All data stored in MongoDB and viewable in MongoDB Compass
+
 ​
 📂 Project Structure
 bash
