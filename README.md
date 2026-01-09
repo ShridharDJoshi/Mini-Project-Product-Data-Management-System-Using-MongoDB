@@ -39,11 +39,9 @@ project-root/
 │   └── product_update.html# Update product page
 
 └── static/
-     |
      ├── css/
          |
          └── style.css      # Stylesheet
-    |
     └── js/
         └── main.js        # Frontend JavaScript
         
